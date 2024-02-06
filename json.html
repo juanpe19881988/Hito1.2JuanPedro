@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blog de Programación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark titulo sticky-top">
+        <a class="navbar-brand" href="#">Blog Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="xml.html">XML</a></li>
+                <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                <li class="nav-item"><a class="nav-link" href="ejercicio.html">Ejercicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal utilizando Bootstrap Grid System -->
+    <div class="container-fluid">
+
+        <!-- Columna Izquierda -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="sidebar">
+
+                    <div id="cat">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li>Programación Web</li>
+                            <li>Base de Datos</li>
+                            <li>Algoritmos</li>
+                        </ul>
+                    </div>
+                    <div id="posts">
+                        <h4>Últimos Posts</h4>
+                        <ul>
+                            <li><a href="xml.html#l3">Ya sabemos crear bien un XML pero... ¿ Cómo lo aplicamos a una empresa?
+                                <br> "Creado por blogger "Admin" hace 10 horas"</a>
+                        </li><br>
+                            <li><a href="json.html#l3">Muy bien.... ya estoy preparado para crear JSON para todos... pero ¿ Cómo lo necesitan las empresas?
+                            <br>"Creado por blogger "Zordon" hace 25 horas"</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div id="redes">
+                        <h4>Síguenos en Redes Sociales</h4>
+                        <ul class="social-icons">
+                            <li><a href="www.facebook.com" target="_blank"><img src="imagenes/facebook-icon.png"
+                                        alt="Facebook"></a></li>
+                            <li><a href="#" target="_blank"><img src="imagenes/twitter-icon.png" alt="Twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido Principal -->
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <ul id="indice">
+                        <li><a href="#l1"> Historia JSON</a></li>
+                        <li><a href="#l2"> Sintaxis y normas </a></li>
+                        <li><a href="#l3"> Aplicación empresarial</a></li>
+                        </ol>
+
+                </div>
+
+                <article class="mb-4">
+
+
+
+
+                    <div class="cabecera">
+                        <h2>¿ Qué fue primero, el huevo o JSON? </h2>
+                        <p>por Zordon | Feb 1, 2024 | JSON | 1 Comentarios
+
+                        </p>
+                    </div>
+                    <article>
+                        <div class="Historia">
+
+                            <h2 id="l1">Historia JSON</h2>
+
+                            <p>JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero que se
+                                utiliza para la comunicación entre sitios web y servidores. Se basa en parte en el
+                                lenguaje de programación JavaScript y se usa ampliamente para transferir datos en
+                                aplicaciones web. </p>
+
+                            <p>La historia de JSON se remonta a principios de la década de 2000, cuando se desarrolló
+                                como una alternativa a XML (eXtensible Markup Language) para el intercambio de datos
+                                entre sistemas. Antes de JSON, XML era el formato de intercambio de datos más utilizado,
+                                pero se consideraba complejo y difícil de analizar. JSON, por otro lado, está diseñado
+                                para ser fácil de leer y escribir, lo que lo convierte en una característica atractiva
+                                para los desarrolladores.</p>
+                            <p> Una de las principales razones por las que JSON se ha convertido en el formato dominante
+                                en el mundo del intercambio de datos es su simplicidad. Está basado en JavaScript, por
+                                lo que la mayoría de los desarrolladores lo conocen. Además, al estar en formato de
+                                texto, es fácil de leer y escribir tanto para humanos como para máquinas. </p>
+
+
+
+
+                            <p>JSON es parte de JavaScript. Básicamente sigue las reglas gramaticales de JavaScript,
+                                pero su método de formato es mucho más complejo. Es un formato especial que se puede
+                                utilizar en cualquier lenguaje de programación, no solo en JavaScript. Sin embargo, dado
+                                que está basado en JavaScript, es fácil convertir datos JSON en objetos JavaScript y
+                                viceversa. Esto lo convierte en una excelente característica para la transferencia de
+                                datos en aplicaciones web donde los datos se utilizan en código JavaScript.</p>
+                            <p> JSON es un formato para almacenar datos en forma de archivo. A menudo se utiliza para
+                                almacenar datos de configuración, ajustes de aplicaciones y otros tipos de datos que
+                                deben almacenarse en un formato legible por máquinas.</p>
+
+                            <p id="Web">El creador de este post utilizó la información recogida en la siguiente web <a
+                                    href="https://ralexrivero.medium.com/entendiendo-json-su-historia-usos-y-tecnicas-de-conversion-c84b5faacf5c">
+                                    Pulsa aquí</a></p>
+                        </div>
+                    </article>
+
+                    <!-- INTERMEDIO -->
+                    <div class="intermedio"></div>
+
+                    <!-- INTERMEDIO -->
+                    <div class="cabecera">
+                        <h2>Vale.... pero ¿Cuál es su sintaxis y normas?
+                        </h2>
+                        <p>por Zordon | Feb 3, 2024 | Json |
+                            10 Comentarios
+
+                        </p>
+                    </div>
+
+
+                    <article>
+                        <div class="Historia">
+                            <h2 id="l2">Sintaxis y normas de XML</h4>
+                                <p>Los archivos en formato JSON tienen las mismas reglas que Javascript, pero además
+                                    tienen unas propias del lenguaje.</p>
+
+                                <h4>Estructuras disponibles</h3>
+                                    <p>Existen dos tipos de estructuras a la hora de formar un JSON, arrays y objetos.
+                                    </p>
+                                    <ul>
+                                        <li>Un objeto, es decir, una lista de pares clave / valor.</li>
+                                        <li> Una colección de elementos, lo que se conoce como array o arreglo.</li>
+                                    </ul>
+                                    <p>Esto quiere decir que no puedes poner un valor primitivo (números, cadenas,
+                                        boleanos) tal cual como un JSON válido, sino que tendrá que estar dentro de una
+                                        estructura permitida, como un objeto o un array.</p>
+                                    <h4>Uso de llaves para representar objetos</h4>
+                                    <p>Los archivos que representan objetos comienzan siempre con una llave <b>{</b> y
+                                        acaban con la llave de cierre <b> }</b>.</p>
+                                    <p>ejemplo:</p>
+                                    <pre>{
+    "id": 44,
+    "game": "age of empires",
+    "author": "Ensemble Studios",
+    "ages": "5+"
+}
+</pre>
+                                    <h4>Uso de corchetes para representar arrays</h4>
+                                    <p>Para los arrays es necesario usar corchetes a su inicio y a su fin. </p>
+                                    <pre>[
+    {
+        "id": 56431
+        "name": "El Padrino",
+        "year": 1972
+    },
+    {
+        "id": 7553
+        "name": "El Padrino 2",
+        "year": 1974
+    },
+]
+</pre>
+                                    <h4>Valores representables con JSON</h4>
+                                    <p>A la hora de usar valores, tenemos unas posibilidades específicas para
+                                        representarlos que son:</p>
+                                    <ul>
+
+                                        <li>Un valor primitivo, que pueden ser de tipos diversos de Javascript,
+                                            numérico, cadena de caracteres, y boleanos (true / false).</li>
+                                        <li> Arrays, es decir, una secuencia de valores separados por comas. En los
+                                            arrays utilizamos los corchetes para delimitar el principio y fin de los
+                                            valores que contienen.</li>
+                                        <li>Objetos, es decir, otros elementos JSON con pares clave / valor.</li>
+                                        <li> Además, también es válido el valor null.</li>
+
+
+                                    </ul>
+                                    <h4>Uso de comillas dobles</h4>
+                                    <p>Cada elemento del objeto JSON se separa del siguiente con una coma (,). Pero no
+                                        debe haber una coma después del último elemento en ningún caso.</p>
+                                    <h4>UTF-8 obligatorio</h4>
+                                    <p>Todos los archivos con código JSON deben estar codificados con UTF-8 de manera
+                                        obligatoria. El archivo transferido en un JSON debe ser necesariamente
+                                        codificado como UTF8 para que no haya problemas de visualización de los
+                                        caracteres contenidos en él.</p>
+
+
+
+
+                                    <p id="Web">El creador de este post utilizó la información recogida en la siguiente
+                                        web
+                                        <a href="https://desarrolloweb.com/home/json#track69"> Pulsa aquí</a>
+                                    </p>
+
+                        </div>
+                    </article>
+
+                    <!-- INTERMEDIO -->
+                    <div class="intermedio"></div>
+
+                    <!-- INTERMEDIO -->
+
+                    <div class="cabecera">
+                        <h2> Muy bien.... ya estoy preparado para crear JSON para todos... pero
+                            ¿ Cómo lo necesitan las empresas?
+                        </h2>
+                        <p>por Zordon | Feb 4, 2024 | Json | 0 Comentarios
+
+                        </p>
+                    </div>
+                    <article>
+                        <div class="Historia">
+                            <h2 id="l3">Aplicaciones en el ámbito empresarial</h2>
+                            <p>El hecho de que JSON se representa en archivos de texto plano hace muy fácil su
+                                transferencia entre sistemas informáticos, usando protocolos ampliamente extendidos como
+                                HTTP.
+                            </p>
+                            <p>Por tanto, JSON es un lenguaje habitualmente usado para transferir datos entre
+                                aplicaciones. En Internet el uso más importante es el de generar datos en el backend y
+                                enviarlos a las aplicaciones frontend. El flujo sería el siguiente:
+                            </p>
+
+                            <p>Las aplicaciones frontend requieren datos para representar al usuario.
+                            </p>
+                            <p>Mediante Javascript realizan solicitudes HTTP a un endpoint (URL) en el backend. Estas
+                                solicitudes se realizan de manera asíncrona mediante Ajax.
+                            </p>
+                            <p>El backend recibe la solicitud sobre el dato que se requiere desde el frontend, o la
+                                operación que se desea realizar (ediciones, inserciones, etc.)
+                            </p>
+                            <p>El backend realiza la operación, enviando el resultado al frontend en formato JSON.
+                            </p>
+                            <p>El frontend recibe el JSON y generalmente construye mediante Javascript el HTML necesario
+                                para representar esa información convenientemente al usuario.
+                            </p>
+                            <p>Este flujo es el que se realiza en los servicios web o APIs, que encontramos
+                                habitualmente en las aplicaciones web modernas.
+                            </p>
+                            <p>Para el marketing también es importante. Hay muchas empresas que utilizan JSON, entre
+                                ellas Google, Facebook y Twitter, aunque hay muchas más. Esto se debe, sobre todo, a sus
+                                ventajas, siendo la principal su simplicidad. Además, también se ha podido comprobar que
+                                el software que utiliza JSON tiene un mayor rendimiento, ya que la información se
+                                procesa de una forma mucho más rápida. A todo esto hay que sumarle que es muy versátil y
+                                accesible, tanto para humanos como para máquinas.
+                            </p>
+                            <p>Esto significa que utilizar JSON en una empresa hace que la página web dé una mejor
+                                respuesta, ya que el maneo de datos será mucho más fluido y sencillo. Cuanto más rápida
+                                sea la carga y más fluida sea la navegación, mejor será la experiencia de usuario, lo
+                                que le llevará a tener mejor reputación dentro de los motores de búsqueda.
+                            </p>
+                            <p>Otro uso que se le puede dar a JSON, también muy útil para cualquier empresa, es que
+                                permite intercambiar datos de un sitio web a otro de forma rápida y sencilla, algo muy
+                                útil en caso de problemas de dominio.
+                            </p>
+                            <p>A pesar de todo lo mencionado, aún hay profesionales que prefieren el formato XML, que
+                                aunque tiene también sus ventajas, no es un archivo tan simple y ligero como un JSON. A
+                                pesar de este detalle, sin duda es otra muy buena opción, pero su complejidad hace que
+                                no sea tan comprensible.
+                            </p>
+                            <p id="Web">El creador de este post utilizó la información recogida en la siguiente web <a
+                                    href="#"> Pulsa aquí</a></p>
+
+
+
+
+
+
+
+
+                        </div>
+                    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="blogger">
+                        <h2>Sobre los blogger</h2>
+
+                        <h3>Zordon</h3>
+                        <img id="adminzordon" src="imagenes/Zordon.jpg" alt="">
+                        <p>Zordon, con una sólida trayectoria de 7 años trabajando en diversas empresas, ha acumulado
+                            una amplia experiencia en el ámbito de la programación y la gestión de datos. Este
+                            apasionado profesional ha decidido compartir sus conocimientos a través del blog "Blog Programación".
+                            Aquí, explorará temas clave, centrándose especialmente en JSON (JavaScript Object Notation),
+                            destacando su importancia en la programación moderna. Prepárate para sumergirte en artículos
+                            detallados, experiencias laborales valiosas y descubrimientos relacionados con el fascinante
+                            mundo de la tecnología y la gestión de datos. ¡Bienvenido a bordo del blog "Blog Programación", donde
+                            la experiencia se convierte en conocimiento!</p>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Scripts de Bootstrap y jQuery -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imágenes Móviles</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .moving-image {
+            position: absolute;
+            width: 100px; /* Ajusta el tamaño según tus necesidades */
+            height: 100px; /* Ajusta el tamaño según tus necesidades */
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagenes/json.jpg" alt="Imagen 1" class="moving-image" id="img1">
+    <img src="imagenes/xml.jpg" alt="Imagen 2" class="moving-image" id="img2">
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            moveImage("img1", 500, 500); // Mueve la primera imagen
+            moveImage("img2", 800, 200); // Mueve la segunda imagen
+        });
+
+        function moveImage(imageId, endX, endY) {
+            var image = document.getElementById(imageId);
+            var startX = Math.random() * window.innerWidth;
+            var startY = Math.random() * window.innerHeight;
+
+            image.style.transform = `translate(${startX}px, ${startY}px)`;
+
+            setTimeout(function() {
+                image.style.transform = `translate(${endX}px, ${endY}px)`;
+                moveImage(imageId, endX, endY); // Llamada recursiva para mover continuamente la imagen
+            }, 2000); // Cambia la velocidad ajustando el valor en milisegundos
+        }
+    </script>
+</body>
+</html>

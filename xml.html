@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blog de Programación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark titulo sticky-top">
+        <a class="navbar-brand" href="#">Blog Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="xml.html">XML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejercicio.html">Ejercicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal utilizando Bootstrap Grid System -->
+    <div class="container-fluid">
+
+        <!-- Columna Izquierda -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="sidebar">
+
+                    <div id="cat">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li>Programación Web</li>
+                            <li>Base de Datos</li>
+                            <li>Algoritmos</li>
+                        </ul>
+                    </div>
+                    <div id="posts">
+                        <h4>Últimos Posts</h4>
+                        <ul>
+                            <li><a href="xml.html#l3">Ya sabemos crear bien un XML pero... ¿ Cómo lo aplicamos a una
+                                    empresa?
+                                    <br> "Creado por blogger "Admin" hace 10 horas"</a>
+                            </li><br>
+                            <li><a href="json.html#l3">Muy bien.... ya estoy preparado para crear JSON para todos...
+                                    pero ¿ Cómo lo necesitan las empresas?
+                                    <br>"Creado por blogger "Zordon" hace 25 horas"</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div id="redes">
+                        <h4>Síguenos en Redes Sociales</h4>
+                        <ul class="social-icons">
+                            <li><a href="#" target="_blank"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                            </li>
+                            <li><a href="#" target="_blank"><img src="imagenes/twitter-icon.png" alt="Twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido Principal -->
+            <div class="col-lg-9 col-md-8 col-sm-12 cuerpo">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <ul id="indice">
+                        <li><a href="#l1"> Historia XML</a></li>
+                        <li><a href="#l2"> Sintaxis y normas </a></li>
+                        <li><a href="#l3"> Aplicación empresarial</a></li>
+                        </ol>
+
+                </div>
+
+                <article class="mb-4">
+
+
+
+
+                    <div class="cabecera">
+                        <h2>Historia del XML. Previos al XML y su creación </h2>
+                        <p>por Admin | Ago 18, 2024 | XML | 1 Comentarios
+
+                        </p>
+                    </div>
+                    <article>
+                        <div class="Historia">
+
+                            <h2 id="l1">Historia XML</h2>
+
+                            <p>El XML proviene de un lenguaje que inventó IBM allá por los años 70. El lenguaje de IBM
+                                se
+                                llama GML (General Markup Language) y surgió por la necesidad que tenían en la empresa
+                                de
+                                almacenar grandes cantidades de información de temas diversos.</p>
+
+                            <p>IBM manejaba y maneja una cantidad ingente de documentación, por lo que necesitaban una
+                                manera de almacenarla, por lo que inventaron el predecesor del actual XML. Este lenguaje
+                                es
+                                GML.</p>
+
+                            <p>En 1986 se creó la evolución de GML que fue SGML, igual que GML pero estandarizado.</p>
+
+                            <p>En 1989 se crea el HTML, que fue utilizado en el nuevo servicio de Internet, la Web. Este
+                                lenguaje fue rápidamente adoptado por la comunidad y por varias organizaciones que
+                                crearon
+                                sus propios visores.</p>
+
+                            <p>Desde el 96 hasta hoy una entidad llamada W3C ha tratado de poner orden en el HTML y
+                                establecer sus reglas y etiquetas para que sea un estándar. Sin embargo, el HTML creció
+                                de
+                                una manera descontrolada y no cumplió todos los problemas que planteaba la sociedad
+                                global
+                                de Internet.</p>
+
+                            <p>El mismo W3C en el 98 empezó y continúa, en el desarrollo de XML (Extended Markup
+                                Language).
+                                En este lenguaje se ha pensado mucho más y muchas personas con grandes conocimientos en
+                                la
+                                materia están trabajando todavía en su gestación. Pretendían solucionar los carencias
+                                del
+                                HTML en lo que se respecta al tratamiento de la información. Problemas del HTML como:
+                            </p>
+
+                            <p>El contenido se mezcla con los estilos que se le quieren aplicar.<br>
+                                No permite compartir información con todos los dispositivos, como pueden ser ordenadores
+                                o
+                                teléfonos móviles.<br>
+                                La presentación en pantalla depende del visor que se utilice.</p>
+                            <p id="Web">El creador de este post utilizó la información recogida en la siguiente web <a
+                                    href="https://desarrolloweb.com/articulos/450.php"> Pulsa aquí</a></p>
+                        </div>
+                    </article>
+
+                    <!-- INTERMEDIO -->
+                    <div class="intermedio"></div>
+
+                    <!-- INTERMEDIO -->
+                    <div class="cabecera">
+                        <h2>¿ Cómo abordamos los pasos previos a la creación de un XML? Sintaxis básica y sus normas
+                        </h2>
+                        <p>por Admin | Ago 25, 2024 | XML | 0 Comentarios
+
+                        </p>
+                    </div>
+
+
+                    <article>
+                        <div class="Historia">
+                            <h2 id="l2">Sintaxis y normas de XML</h4>
+                                <p>En el proceso de crear documentos XML, es esencial comprender los pasos preliminares
+                                    y
+                                    las reglas fundamentales de su sintaxis. El desarrollo de archivos XML requiere un
+                                    enfoque meticuloso para garantizar la coherencia y validez del documento. Antes de
+                                    adentrarnos en la creación propiamente dicha, es imperativo explorar los fundamentos
+                                    de
+                                    la sintaxis básica y familiarizarse con las normas que rigen la estructura de los
+                                    documentos XML. Este escrito introductorio pretende proporcionar una visión general
+                                    de
+                                    cómo abordamos los pasos iniciales en la creación de un XML, destacando la
+                                    importancia
+                                    de seguir reglas específicas, como el cierre adecuado de etiquetas, la sensibilidad
+                                    a
+                                    mayúsculas y minúsculas, la necesidad de un elemento raíz, y la correcta definición
+                                    de
+                                    valores de atributos. Al comprender estos elementos clave, se establece una base
+                                    sólida
+                                    para la construcción exitosa de documentos XML coherentes y conformes a las
+                                    normativas
+                                    establecidas.</p>
+                                <p>Debe seguir estas reglas al crear la sintaxis XML:</p>
+                                <ul>
+                                    <li>Todos los elementos XML deben tener una etiqueta de cierre.
+
+                                    </li>
+                                    <li>Las etiquetas XML son sensibles a mayúsculas y minúsculas.</li>
+                                    <li>Todos los elementos XML deben estar debidamente anidados.</li>
+                                    <li>Todos los documentos XML debe tener un elemento raíz.</li>
+                                    <li>Los valores de atributo siempre deben estar entre comillas.</li>
+                                </ul>
+
+                                <h4>Todos los elementos XML deben tener una etiqueta de cierre</h4>
+                                <p>No está permitido omitir la etiqueta de cierre al crear la sintaxis XML. Los
+                                    elementos
+                                    XML deben tener una etiqueta de cierre.</p>
+                                <p>Las etiquetas XML son sensibles a mayúsculas y minúsculas</p>
+                                <p>Cuando crea documentos XML, la etiqueta &lt;Body&gt; es diferente de la etiqueta
+                                    &lt;body&gt;.</p>
+
+                                <h4>Todos los documentos XML deben tener un elemento raíz
+                                </h4>
+                                <p>Todos los documentos XML deben contener un par de etiquetas individuales para definir
+                                    un
+                                    elemento raíz. Todos los demás elementos deben estar dentro de este elemento raíz.
+                                    Todos
+                                    los elementos pueden tener subelementos (elementos hijo). Los subelementos deben
+                                    estar
+                                    anidados correctamente dentro de su elemento padre.</p>
+                                <h4>Los valores de atributo siempre deben estar entre comillas</h4>
+                                <p>No está permitido omitir las comillas alrededor de los valores de atributos. Los
+                                    elementos XML pueden tener atributos en pares nombre/valor; sin embargo, el valor de
+                                    atributo siempre debe estar entre comillas.</p>
+                                <p id="Web">El creador de este post utilizó la información recogida en la siguiente web
+                                    <a href="https://www.ibm.com/docs/es/b2bis?topic=syntax-xml-rules"> Pulsa aquí</a>
+                                </p>
+
+                        </div>
+                    </article>
+
+                    <!-- INTERMEDIO -->
+                    <div class="intermedio"></div>
+
+                    <!-- INTERMEDIO -->
+
+                    <div class="cabecera">
+                        <h2> Ya sabemos crear bien un XML pero... ¿ Cómo lo aplicamos a una empresa?
+                        </h2>
+                        <p>por Admin | Ago 31, 2024 | XML | 0 Comentarios
+
+                        </p>
+                    </div>
+                    <article>
+                        <div class="Historia">
+                            <h2 id="l3">Aplicación en empresa</h2>
+                            <p> ¿Qué tipo de XML se utiliza? El lenguaje de marcado extensible (XML) es la tecnología
+                                detrás de miles de aplicaciones, desde herramientas de productividad comunes como el
+                                procesamiento de textos hasta software de publicación de libros e incluso sistemas
+                                complejos de especificación de aplicaciones.
+                            </p>
+                            <h4>Transferencia de datos</h4>
+                            <p>XML permite transferir datos entre dos sistemas que almacenan los mismos datos en
+                                diferentes formatos. Por ejemplo, su sitio web almacena las fechas como MM/DD/AAAA, pero
+                                su sistema de contabilidad almacena las fechas como MM/DD/AAAA. XML le permite
+                                transferir información desde un sitio web a su sistema de contabilidad. Los
+                                desarrolladores pueden escribir código que convierta automáticamente:</p>
+                            <ul>
+                                <li>Datos del sitio web a XML</li>
+                                <li>Datos XML a datos del sistema de contabilidad.</li>
+                                <li>La información del sistema de contabilidad se devuelve en formato XML.</li>
+                                <li> Los datos XML se devuelven a los datos del sitio.
+                                </li>
+                            </ul>
+                            <h4>Aplicación web</h4>
+                            <p>XML proporciona la estructura de los datos que se muestran en las páginas web. Otras
+                                tecnologías de sitios web, como HTML, se utilizan junto con XML para proporcionar
+                                contenido coherente y relevante a los visitantes del sitio web. Por ejemplo, considere
+                                un sitio de comercio electrónico que vende ropa. En lugar de mostrar toda la ropa a
+                                todos los visitantes, el sitio utiliza XML para crear páginas web adaptadas a las
+                                preferencias del usuario. Filtra una etiqueta para mostrar productos de una marca
+                                específica. </p>
+
+                            <h4>Documentación</h4>
+                            <p>XML permite definir la información estructural de cualquier documento técnico. Luego,
+                                otros programas se ocupan de la estructura del documento para una presentación flexible.
+                                Por ejemplo, los párrafos, las viñetas numeradas y los títulos tienen etiquetas XML.
+                                Utilizando estas etiquetas, otros tipos de software pueden preparar automáticamente
+                                documentos para, por ejemplo, imprimir y publicar páginas web. </p>
+                            <h4>Tipo de datos</h4>
+                            <p>Muchos lenguajes de programación admiten XML como tipo de datos. Con este soporte, puede
+                                escribir fácilmente programas en otros lenguajes que funcionen directamente con archivos
+                                XML..
+                            </p>
+                            <p id="Web">El creador de este post utilizó la información recogida en la siguiente web <a
+                                    href="https://aws.amazon.com/es/what-is/xml/"> Pulsa aquí</a></p>
+
+
+
+
+
+
+
+
+                        </div>
+                    </article>
+
+
+
+
+
+
+                    <div class="blogger">
+                        <h2>Sobre los blogger</h2>
+
+                        <h3>Admin</h3>
+                        <img id="admin" src="imagenes/admin.jpg" alt="">
+                        <p>Admin, un apasionado escritor con una vasta experiencia de 5 años, se ha convertido en una
+                            figura
+                            destacada en el mundo de los blogs dedicados a XML. Con una profunda comprensión de la
+                            sintaxis
+                            y las normas fundamentales de XML, Admin ha compartido su conocimiento a lo largo del
+                            tiempo,
+                            guiando a su audiencia a través de los intrincados detalles de la creación y manipulación de
+                            documentos XML. Su habilidad para explicar conceptos complejos de manera accesible ha
+                            generado
+                            un seguimiento leal entre aquellos que buscan aprender y perfeccionar sus habilidades en el
+                            uso
+                            de esta tecnología. La trayectoria de Admin no solo refleja su dominio técnico, sino también
+                            su
+                            compromiso constante con la difusión del conocimiento y el fortalecimiento de la comunidad
+                            interesada en XML.</p>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+ 
+
+
+</body>
+
+</html>

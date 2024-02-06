@@ -1,0 +1,204 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-image: url(imagenes/fondop.png);
+    /* background-color: antiquewhite; */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  overflow: auto;
+
+
+
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    margin-bottom: 20px;
+    width: 100%;
+ height: 5em;
+ font-size: 2em;
+ display: block;
+ /* position:fixed; */
+
+    
+}
+
+/* .cuerpo{
+
+   
+} */
+
+/* Estilos para la columna izquierda (sidebar) */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    /* position: fixed; */
+    margin-top: 15%;
+}
+
+
+
+
+.sidebar h4 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la sección principal */
+.article {
+    margin-bottom: 30px;
+}
+
+/* Estilos para íconos de redes sociales */
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+ .Historia{
+background-color: beige;
+font-size: 1,5em;
+border-style: solid;
+text-align: justify;
+ }
+
+ #Web{
+font-style: oblique;
+color: blue;
+ }
+
+ .intermedio{
+    background-color: rgb(63, 59, 242);
+    border: solid 3px black;
+    width: auto;
+    height: 20px;
+text-align: center;
+    border-radius: 40px 40px;
+ }
+ #admin{
+width: 10%;
+
+ }
+ #adminzordon{
+    width: 10%;
+    
+     }
+
+ .blogger
+{
+    font-style: italic;
+    font-size: 1.5em;
+
+
+}
+#indice ul {
+    list-style-type: none;
+
+    
+}
+
+#indice a {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.presentacion{
+margin-top: 15%;
+font-size: 2em;
+
+}
+
+
+
+
+
+
+/* para la prueba de ejercicio  */
+ .movil {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#movilRojo {
+    background-color: #e74c3c; /* Rojo */
+    top: 650px;
+    right: 100px;
+    width: 10em;
+
+    height: 2em;
+} 
+
+ #movilVerde {
+    background-color: #2ecc71; /* Verde */
+  top: 550px;
+    right: 150px;
+    width: 10em;
+    height: 2em;
+} 
+
+ #movilAzul {
+    background-color: #3498db; /* Azul */
+ top: 800px;
+    right: 300px;
+    width: 10em;
+    height: 2em;
+}
+.form input{
+    width: 80%;
+    height: 20%;
+
+
+}
+/* .area{
+
+    width: 300px;
+    height: 200px;
+} */
+
+.moving-image {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    transition: transform 2s ease-in-out;
+}
+
+.form-check-input[type="checkbox"] {
+    width: 30px; /* Ancho del checkbox */
+    height: 30px; /* Altura del checkbox */
+}
+.form-check-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* Espacio entre el checkbox y el texto */
+}
