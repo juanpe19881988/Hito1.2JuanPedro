@@ -9,7 +9,16 @@ body {
   background-attachment: fixed; 
   overflow: auto;
 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
+
+
+}
+
+.container-fluid{
+    flex: 1;
 
 }
 
@@ -25,10 +34,8 @@ body {
     
 }
 
-/* .cuerpo{
 
-   
-} */
+
 
 /* Estilos para la columna izquierda (sidebar) */
 .sidebar {
@@ -200,5 +207,49 @@ font-size: 2em;
 .form-check-label {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px; /* Espacio entre el checkbox y el texto */
+    margin-left: 10px; 
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 80%; 
+        margin: 0 auto; 
+        margin-top:90%;
+    }
+
+}
+
+
+.contenidoDesplegable {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.contenidoDesplegable.abierto {
+    display: block;
+    background-color: beige;
+font-size: 1,5em;
+border-style: solid;
+text-align: justify;
+}
+
+
+.celdaConBorde {
+    border: 3px solid black; /* Grosor, estilo y color del borde */
+    padding: 5px; /* Opcional: añade un relleno a la celda para separar el contenido del borde */
+    width: auto;
+}
+.tabla{
+text-align: center;
+font-size: 2em;
+border-collapse:separate ;
+border-spacing: auto;
+color: white;
+
+}
+
+
+td, th {
+    border-bottom: 2px solid black; /* Grosor, estilo y color de la línea */
+
 }

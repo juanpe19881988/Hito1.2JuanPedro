@@ -10,33 +10,35 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
 
+
+<!-- Menú de Navegación -->
+
+<body>
     <!-- Menú de Navegación -->
-    <body>
-        <!-- Menú de Navegación -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark titulo sticky-top">
-            <a class="navbar-brand" href="#">Blog Programación</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="xml.html">XML</a></li>
-                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ejercicio.html">Ejercicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    
-        <!-- Contenido de la página aquí -->
-    </body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark titulo sticky-top">
+        <a class="navbar-brand" href="#">Blog Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="xml.html">XML</a></li>
+                <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                <li class="nav-item"><a class="nav-link" href="ejercicio.html">Ejercicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  
+
+
 
     <!-- Contenedor principal utilizando Bootstrap Grid System -->
     <div class="container-fluid">
@@ -49,19 +51,21 @@
                     <div id="cat">
                         <h4>Categorías</h4>
                         <ul>
-                            <li>Programación Web</li>
-                            <li>Base de Datos</li>
-                            <li>Algoritmos</li>
+                            <li ><a href="#">Programación Web</a></li>
+                            <li><a href="#">Base de Datos</a></li>
+                            <li><a href="#">Algoritmos</a></li>
                         </ul>
                     </div>
                     <div id="posts">
                         <h4>Últimos Posts</h4>
                         <ul>
-                            <li><a href="xml.html#l3">Ya sabemos crear bien un XML pero... ¿ Cómo lo aplicamos a una empresa?
-                                <br> "Creado por blogger "Admin" hace 10 horas"</a>
-                        </li><br>
-                            <li><a href="json.html#l3">Muy bien.... ya estoy preparado para crear JSON para todos... pero ¿ Cómo lo necesitan las empresas?
-                            <br>"Creado por blogger "Zordon" hace 25 horas"</a>
+                            <li><a href="xml.html#l3">Ya sabemos crear bien un XML pero... ¿ Cómo lo aplicamos a una
+                                    empresa?
+                                    <br> "Creado por blogger "Admin" hace 10 horas"</a>
+                            </li><br>
+                            <li><a href="json.html#l3">Muy bien.... ya estoy preparado para crear JSON para todos...
+                                    pero ¿ Cómo lo necesitan las empresas?
+                                    <br>"Creado por blogger "Zordon" hace 25 horas"</a>
                             </li>
                         </ul>
                     </div>
@@ -69,9 +73,10 @@
                     <div id="redes">
                         <h4>Síguenos en Redes Sociales</h4>
                         <ul class="social-icons">
-                            <li><a href="#" target="_blank"><img src="imagenes/facebook-icon.png" alt="Facebook"></a></li>
-                            <li><a href="#" target="_blank"><img src="imagenes/twitter-icon.png" alt="Twitter"></a></li>
-                            <li><a href="#" target="_blank"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a></li>
+                            <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="imagenes/facebook-icon.png" alt="Facebook"></a></li>
+                            <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter-icon.png" alt="Twitter"></a></li>
+                            <li><a href="https://es.linkedin.com/" target="_blank"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a></li>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -83,42 +88,55 @@
                 <article class="mb-4 presentacion">
                     <h1>¡Bienvenidos a "Blog Programación"!</h1>
 
-                    <p>En "Blog Programación", exploramos las maravillas de la programación, centrándonos específicamente en dos pilares fundamentales: XML (Extensible Markup Language) y JSON (JavaScript Object Notation). Con una visión clara de facilitar el aprendizaje y comprensión de estas tecnologías esenciales, nuestro blog se convierte en un recurso invaluable para desarrolladores, estudiantes y entusiastas de la programación.</p>
-                
+                    <p>En "Blog Programación", exploramos las maravillas de la programación, centrándonos
+                        específicamente en dos pilares fundamentales: XML (Extensible Markup Language) y JSON
+                        (JavaScript Object Notation). Con una visión clara de facilitar el aprendizaje y comprensión de
+                        estas tecnologías esenciales, nuestro blog se convierte en un recurso invaluable para
+                        desarrolladores, estudiantes y entusiastas de la programación.</p>
+
                     <h2>Lo que encontrarás en "Blog Programación":</h2>
-                
+
                     <ol>
                         <li>
-                            <p><strong>Profundización en XML y JSON:</strong> Desglosaremos la sintaxis, aplicaciones prácticas y normas de uso de XML y JSON para que puedas dominar estas herramientas esenciales.</p>
+                            <p><strong>Profundización en XML y JSON:</strong> Desglosaremos la sintaxis, aplicaciones
+                                prácticas y normas de uso de XML y JSON para que puedas dominar estas herramientas
+                                esenciales.</p>
                         </li>
                         <li>
-                            <p><strong>Experiencias Prácticas:</strong> Compartiremos experiencias reales y casos de uso en el ámbito empresarial, brindándote insights valiosos y aplicaciones prácticas de XML y JSON.</p>
+                            <p><strong>Experiencias Prácticas:</strong> Compartiremos experiencias reales y casos de uso
+                                en el ámbito empresarial, brindándote insights valiosos y aplicaciones prácticas de XML
+                                y JSON.</p>
                         </li>
                         <li>
-                            <p><strong>Desarrollo de Habilidades:</strong> Aprenderás a manejar datos de manera eficiente, mejorarás tus habilidades de programación y te mantendrás actualizado con las últimas tendencias tecnológicas.</p>
+                            <p><strong>Desarrollo de Habilidades:</strong> Aprenderás a manejar datos de manera
+                                eficiente, mejorarás tus habilidades de programación y te mantendrás actualizado con las
+                                últimas tendencias tecnológicas.</p>
                         </li>
                         <li>
-                            <p><strong>Comunidad Activa:</strong> Únete a nuestra comunidad en crecimiento, participa en discusiones, comparte tus conocimientos y encuentra inspiración para tus proyectos.</p>
+                            <p><strong>Comunidad Activa:</strong> Únete a nuestra comunidad en crecimiento, participa en
+                                discusiones, comparte tus conocimientos y encuentra inspiración para tus proyectos.</p>
                         </li>
                     </ol>
-                
-                    <p>En "Blog Programación", la programación se convierte en una experiencia emocionante y accesible para todos. ¡Prepárate para sumergirte en el fascinante mundo de XML y JSON! ¡Bienvenido a nuestro viaje de descubrimiento y aprendizaje constante!</p>
-                
+
+                    <p>En "Blog Programación", la programación se convierte en una experiencia emocionante y accesible
+                        para todos. ¡Prepárate para sumergirte en el fascinante mundo de XML y JSON! ¡Bienvenido a
+                        nuestro viaje de descubrimiento y aprendizaje constante!</p>
+
                     <p>Atentamente,<br>El Equipo de "Blog Programación"</p>
                 </article>
                 <!-- Artículo sobre JSON -->
-                
+
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   
 
     <img src="imagenes/json.jpg" alt="Imagen 1" class="moving-image" id="img1">
     <img src="imagenes/xml.jpg" alt="Imagen 2" class="moving-image" id="img2">
-    
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             moveImage("img1", 800, 800); // Mueve la primera imagen
             moveImage("img2", 800, 200); // Mueve la segunda imagen
         });
@@ -130,95 +148,15 @@
 
             image.style.transform = `translate(${startX}px, ${startY}px)`;
 
-            setTimeout(function() {
+            setTimeout(function () {
                 image.style.transform = `translate(${endX}px, ${endY}px)`;
                 moveImage(imageId, endX, endY); // Llamada recursiva para mover continuamente la imagen
             }, 2000); // Cambia la velocidad ajustando el valor en milisegundos
         }
     </script>
 
-    <!-- -- funciona parte media y al hacer scroll se inicia -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-
-    <img src="imagenes/json.jpg" alt="Imagen 1" class="moving-image" id="img1">
-    <img src="imagenes/xml.jpg" alt="Imagen 2" class="moving-image" id="img2">
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            window.addEventListener("scroll", function() {
-                // Obtener la altura de la ventana del navegador
-                var windowHeight = window.innerHeight;
-    
-                // Calcular la mitad superior de la página
-                var halfWindowHeight = windowHeight / 2;
-    
-                // Obtener la posición actual del scroll
-                var scrollY = window.scrollY || window.pageYOffset;
-    
-                // Ejecutar el movimiento de la imagen solo si el scroll está en la mitad superior de la página
-                if (scrollY <= halfWindowHeight) {
-                    moveImage("img1", 800, 800); // Mueve la primera imagen
-                    moveImage("img2", 800, 200); // Mueve la segunda imagen
-                }
-            });
-        });
-    
-        function moveImage(imageId, endX, endY) {
-            var image = document.getElementById(imageId);
-            var startX = Math.random() * window.innerWidth;
-            var startY = Math.random() * (window.innerHeight / 2); // Limitar a la mitad superior de la página
-    
-            image.style.transform = `translate(${startX}px, ${startY}px)`;
-    
-            setTimeout(function() {
-                var endX = Math.random() * window.innerWidth;
-                var endY = Math.random() * (window.innerHeight / 2); // Limitar a la mitad superior de la página
-                image.style.transform = `translate(${endX}px, ${endY}px)`;
-                moveImage(imageId, endX, endY); // Llamada recursiva para mover continuamente la imagen
-            }, 2000); // Cambia la velocidad ajustando el valor en milisegundos
-        }
-    </script>
-     -->
-     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-
-    <img src="imagenes/json.jpg" alt="Imagen 1" class="moving-image" id="img1">
-    <img src="imagenes/xml.jpg" alt="Imagen 2" class="moving-image" id="img2">
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            window.addEventListener("scroll", function() {
-                // Obtener la altura de la ventana del navegador
-                var windowHeight = window.innerHeight;
-
-                // Calcular la mitad superior de la página
-                var halfWindowHeight = windowHeight / 2;
-
-                // Obtener la posición actual del scroll
-                var scrollY = window.scrollY || window.pageYOffset;
-
-                // Ejecutar el movimiento de la imagen solo si el scroll está en la mitad superior de la página
-                if (scrollY <= halfWindowHeight) {
-                    moveImage("img1", 800, 800); // Mueve la primera imagen
-                    moveImage("img2", 800, 200); // Mueve la segunda imagen
-                }
-            });
-        });
-
-        function moveImage(imageId, endX, endY) {
-            var image = document.getElementById(imageId);
-            var startX = Math.random() * (window.innerWidth / 2); // Limitar a la mitad derecha de la página
-            var startY = Math.random() * (window.innerHeight / 2); // Limitar a la mitad superior de la página
-
-            image.style.transform = `translate(${startX}px, ${startY}px)`;
-
-            setTimeout(function() {
-                var endX = Math.random() * (window.innerWidth / 2); // Limitar a la mitad derecha de la página
-                var endY = Math.random() * (window.innerHeight / 2); // Limitar a la mitad superior de la página
-                image.style.transform = `translate(${endX}px, ${endY}px)`;
-                moveImage(imageId, endX, endY); // Llamada recursiva para mover continuamente la imagen
-            }, 2000); // Cambia la velocidad ajustando el valor en milisegundos
-        }
-    </script> -->
+    <footer class="bg-dark text-center text-white">© 2024 creada por Juan Pedro Maldonado. All rights reserved.
+    </footer>
 </body>
 
 </html>
